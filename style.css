@@ -1,0 +1,427 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    width: 100%;
+    min-height: 100vh;
+}
+
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+section nav .logo img{
+    width: 50px;
+    cursor: pointer;
+    margin: 7px 0;
+}
+
+section nav ul{
+    list-style: none;
+}
+
+section nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+section nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+}
+
+section nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: B6771D;
+    display: block;
+    transition: 0.2s linear;
+}
+
+section nav ul li a:hover::after{
+    width: 100%;
+}
+
+section nav ul li a:hover{
+    color: #B6771D;
+}
+
+section nav .icon i{
+    font-size: 18px;
+    color: #000;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section nav .icon i:hover{
+    color: #B6771D;
+}
+
+section .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 130px;
+}
+
+section .main .men_text h1{
+    font-size: 60px;
+    
+}
+section .main .men_text{
+    flex-basis: 40%;
+}
+
+section .main .men_text h1 span{
+    margin-left: 15px;
+    color: #B6771D;
+    font-family: mv boli;
+    line-height: 22px;
+    font-size: 70px;
+}
+
+section main .main_image{
+    flex-basis: 50%;
+    text-align: center;
+}
+section .main .main_image img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+section .main_btn{
+    background: #B6771D;
+    width: 170px;
+    display: block;
+    cursor: pointer;
+    padding: 15px 25px;
+    margin: 150px auto 0 auto;
+
+}
+
+section .main_btn a{
+    color: #fff;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+section .main_btn i{
+    color: #fff;
+    transition: 0.3s;
+}
+
+section .main_btn:hover i{
+    transform: translateX(7px);
+}
+
+
+
+/*About*/
+
+.about{
+    width: 100%;
+    min-height: 100vh;
+    padding: 70px 0;
+}
+
+.about .about_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about .about_main .image img{
+    max-width: 100%;
+    position: relative;
+    top: 60px;
+}
+.about .about_main .image,
+.about .about_main .about_text{
+    flex-basis: 45%;
+    padding: 100px;
+}
+.about .about_main .about_text h1 span{
+    color: #B6771D;
+    margin-right: 15px;
+    font-family: mv boli;
+}
+
+.about .about_main .about_text h1{
+    font-size: 55px;
+    position: relative;
+    bottom: 50px;
+}
+
+.about .about_main .about_text h3{
+    font-size: 30px;
+    margin: 0 0 50px 0;
+}
+
+.about .about_main .about_text p{
+    max-width: 100%;
+    text-align: justify;
+    margin-right: 30px;
+    line-height: 22px;
+}
+
+.about .about_btn{
+    background: #B6771D;
+    padding: 12px 25px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    left: 55%;
+    bottom: 30px;
+}
+
+
+
+/*Meals*/
+
+.Egy_Meals{
+    width: 100%;
+    padding: 70px 0;
+}
+
+.Egy_Meals h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.Egy_Meals h1 span{
+    color: #B6771D;
+    margin-left: 15px;
+    font-family: mv boli;
+}
+
+.Egy_Meals h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #B6771D;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.Egy_Meals .meal_box{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.Egy_Meals .meal_box .meal_card{
+    width: 325px;
+    height: 480px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.Egy_Meals .meal_box .meal_card .meal_image{
+    width: 300px;
+    height: 245px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.Egy_Meals .meal_box .meal_card .meal_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+
+.Egy_Meals .meal_box .meal_card .meal_image:hover img{
+    transform: scale(1.1);
+}
+
+.Egy_Meals .meal_box .meal_card .small_card{
+    width: 45px;
+    height: 45px;
+    float: right;
+    position: relative;
+    top: -240px;
+    right: -8px;
+    opacity: 0;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.Egy_Meals .meal_box .meal_card:hover .small_card{
+    position: relative;
+    top: -240px;
+    right: 20px;
+    opacity: 1;
+}
+
+.Egy_Meals .meal_box .meal_card .small_card i{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+    color: #000;
+    cursor: pointer;
+    text-shadow: 0 0 6px #000;
+    transition: 0.2s;
+}
+
+.Egy_Meals .meal_box .meal_card .small_card i:hover{
+    color: #B6771D;
+}
+
+.Egy_Meals .meal_box .meal_card .meal_info h2{
+    width: 60%;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    font-size: 25px;
+    color: #B6771D;
+}
+
+.Egy_Meals .meal_box .meal_card .meal_info p{
+    text-align: center;
+    margin-top: 8px;
+    line-height: 21px;
+}
+
+.Egy_Meals .meal_box .meal_card .meal_info h3{
+  text-align: center;
+    margin-top: 10px;
+}
+
+.Egy_Meals .meal_box .meal_card .meal_info .meal_icon{
+    color: #B6771D;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+.Egy_Meals .meal_box .meal_card  .meal_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background: #000;
+    padding: 8px 5px;
+    margin: 30px;
+    transition: 0.3s;
+}
+
+
+/* each meal */
+
+.meal_name{
+    background-color:#B6771D;
+    font-family:'Gill Sans';
+    width: 100%;
+    text-align: center;
+    padding: 20px 30px;
+    border-radius: 50px;
+    border-style: solid;
+    border-color:#B6771D;
+    
+}
+.info {
+    background-color: #d2e0d1;
+    padding: 20px;
+    width: 50%;
+    
+    text-align: center;
+    border-style: solid;
+    border-color:#B6771D;
+    border-radius: 50px;
+    margin: 20px auto;
+    font-size: 25px;
+
+}
+.ingr{
+    background-color: #d2e0d1;
+    padding: 50px;
+    width: 50%;
+    font-size: 25px;
+    border-style: solid;
+    border-color: #B6771D;
+    border-radius: 50px;
+    margin: 20px auto;
+}
+.recipe{
+    background-color: #d2e0d1;
+    padding: 50px;
+    width: 50%;
+    font-size: 25px;
+    border-style: solid;
+    border-color: #B6771D;
+    border-radius: 50px;
+    margin: 20px auto;
+
+}
+.video{
+    display: block;
+    max-width: 100%;
+    width: 640px; 
+    margin: 20px auto;
+}
+.body_molokhia{
+    background-image:url(/image/molokhia.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    
+}
+.body_koshary{
+    background-image: url(/image/koshary.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.body_mahshi{
+    background-image: url(/image/mahshi.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.body_falafel{
+    background-image: url(/image/falafel.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.next_btn{
+    background-color: #B6771D;
+    color: #000;
+    padding: 10px;
+    width: fit-content;
+    margin: auto;
+    border-style: solid;
+    border-radius: 40px;
+
+}
