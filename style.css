@@ -391,26 +391,26 @@ section .main_btn:hover i{
     margin: 20px auto;
 }
 .body_molokhia{
-    background-image:url(/image/molokhia.png);
+    background-image:url(/molokhia.png);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     
 }
 .body_koshary{
-    background-image: url(/image/koshary.png);
+    background-image: url(/koshary.png);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
 }
 .body_mahshi{
-    background-image: url(/image/mahshi.png);
+    background-image: url(/mahshi.png);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
 }
 .body_falafel{
-    background-image: url(/image/falafel.png);
+    background-image: url(/falafel.png);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -425,3 +425,4 @@ section .main_btn:hover i{
     border-radius: 40px;
 
 }
+
